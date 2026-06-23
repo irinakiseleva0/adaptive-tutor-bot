@@ -1,0 +1,83 @@
+[
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "OpenRouter",
+    "topic": "CAP Theorem",
+    "duration_ms": 2429,
+    "response_length": 1539,
+    "reply": "Let's dive into the CAP theorem.\n\n**The CAP Theorem**\n\nThe CAP theorem, also known as the Brewer's CAP theorem, is a fundamental concept in distributed systems. It states that in a distributed system,...",
+    "status": "success"
+  },
+  {
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "OpenRouter",
+    "topic": "CAP Theorem",
+    "duration_ms": 4705,
+    "response_length": 1583,
+    "reply": "The CAP theorem, also known as the CAP principle, is a fundamental concept in distributed systems. It states that a distributed system can fully guarantee at most two of the following three properties...",
+    "status": "success"
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "provider": "Groq",
+    "topic": "CAP Theorem",
+    "duration_ms": 843,
+    "response_length": 1534,
+    "reply": "**CAP Theorem Overview**\n\nThe CAP theorem, also known as Brewer's CAP, states that distributed databases can only guarantee two out of the following three properties:\n\n1. **Consistency** (C): All node...",
+    "status": "success"
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "OpenRouter",
+    "topic": "Saga Pattern",
+    "duration_ms": 13904,
+    "response_length": 1484,
+    "reply": "The Saga Pattern is a global transactional pattern in distributed systems that ensures consistency and reliability in the presence of failures. It's a compensation-based approach that captures the com...",
+    "status": "success"
+  },
+  {
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "OpenRouter",
+    "topic": "Saga Pattern",
+    "duration_ms": 10250,
+    "response_length": 571,
+    "reply": "The Saga pattern is a method for managing complex transactions across multiple services or databases in a distributed system. It involves a series of steps (UnitOfWorks) where each step is a transacti...",
+    "status": "success"
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "provider": "Groq",
+    "topic": "Saga Pattern",
+    "duration_ms": 572,
+    "response_length": 1519,
+    "reply": "**Saga Pattern in Distributed Systems**\n\nThe Saga pattern is a design pattern used in distributed systems to manage long-running, complex transactions across multiple services. It ensures that transac...",
+    "status": "success"
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "OpenRouter",
+    "topic": "Consistent Hashing",
+    "duration_ms": 5940,
+    "response_length": 1287,
+    "reply": "**Consistent Hashing**\n\nImagine you have a coffee shop with two baristas, Emma and Mike, handling the takeout orders. You want to ensure that customers get their orders consistently, even if you add o...",
+    "status": "success"
+  },
+  {
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "OpenRouter",
+    "topic": "Consistent Hashing",
+    "duration_ms": 4124,
+    "response_length": 1446,
+    "reply": "Consistent hashing can be explained using a library bookshelves analogy:\n\nImagine a library where books are arranged on multiple shelves. Each shelf represents a server in a distributed system. Books ...",
+    "status": "success"
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "provider": "Groq",
+    "topic": "Consistent Hashing",
+    "duration_ms": 682,
+    "response_length": 1286,
+    "reply": "**Consistent Hashing: A Real-World Analogy**\n\nImagine you're a music lover with a vast music library, and you want to distribute your collection across multiple friends' houses. You can't simply send ...",
+    "status": "success"
+  }
+]
