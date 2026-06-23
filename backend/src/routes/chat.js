@@ -1,7 +1,9 @@
+import { authenticateToken } from "../middleware/auth.js"
 import express from "express"
 import { getTutorResponse } from "../services/groqService.js"
 
 const router = express.Router()
+router.use(authenticateToken)
 
 // POST /api/chat
 // Body: { message, topic, difficultyLevel, history, previousAnalogies }
