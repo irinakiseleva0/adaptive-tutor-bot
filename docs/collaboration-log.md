@@ -30,7 +30,15 @@
 
 | Date | Task | Description | Decisions Made |
 |------|------|-------------|----------------|
-| | | | |
+| 26/06/2026 | Project setup | Cloned the repo, accepted the invite, made the feature/frontend branch | Wanted to keep my stuff separate from main until its actually working |
+| 26/06/2026 | Backend check | Copied .env.example to .env, got the groq key from Irina, ran the backend and tested the 3 endpoints with curl before touching the frontend | Tested with curl first so I dont build the pages against a guess of what the API returns |
+| 26/06/2026 | Frontend setup | npm create vite for the React app, installed react-router-dom | Went with Vite, faster to boot than CRA |
+| 26/06/2026 | api.js | One file with all the fetch calls (login, getTopics, sendChatMessage) instead of putting fetch in every page | Easier to fix the base url / headers in one place instead of 3 |
+| 26/06/2026 | Login page | Login.jsx, calls /api/auth/login, keeps the token in state, redirects to home after | Token only in memory for now not localStorage, simplest for the prototype but it disappears on refresh |
+| 26/06/2026 | Home page | Home.jsx, calls /api/topics on load, shows the topics as clickable cards | First try I used topic.name and it was blank - checked topics.js in backend and its actually title, fixed it |
+| 26/06/2026 | Chat page | Chat.jsx, calls /api/chat with the bearer token, shows the messages and the difficulty level | Sends the previous messages as history too so the backend logic for adjusting difficulty has context |
+| 26/06/2026 | Routing | Hooked the 3 pages together in App.jsx with react-router-dom, redirect to /login if no token | Simple token check on each route, no need for a full auth context for just 3 pages |
+| 26/06/2026 | Testing | Tested the full flow by hand - login, pick topic, chat, checked the difficulty number changes | worked first try after fixing the topics.title thing |
 
 ---
 
